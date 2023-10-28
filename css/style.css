@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --primary-tomato: #ff6257;
+  --neutral-dark-slate-grey: #242742;
+  --neutral-charcoal-grey: #36384e;
+  --neutral-grey: #9294a0;
+  --neutral-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--neutral-charcoal-grey);
+  color: var(--neutral-dark-slate-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.container {
+  padding: 1rem;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(20, 15, 48, 0.9);
+  background: var(--neutral-white);
+}
+
+ul {
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* card content */
+.card-content {
+  text-align: start;
+  padding: 3rem 2.85rem;
+}
+
+.card-content h1 {
+  font-size: 3.2rem;
+}
+
+.card-content p {
+  margin: 1rem 0;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.list-content li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0.5rem 0;
+  font-size: 16px;
+}
+
+.list-content img {
+  width: 15px;
+  margin-right: 0.5rem;
+}
+
+.form-content {
+  margin-top: 1.5rem;
+}
+
+.form-control label {
+  font-size: 12px;
+  font-weight: 700;
+  text-align: start;
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  width: 100%;
+  padding: 0.2rem;
+  background: #e21212;
+  color: var(--neutral-white);
+  border-radius: 5px;
+  margin: 0.2rem 0;
+  letter-spacing: 0.2px;
+  display: none;
+}
+
+
+.form-control input {
+  width: 100%;
+  margin: 0.2rem 0 1rem;
+  padding: 0.8rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.form-control input::placeholder {
+  color: var(--neutral-grey);
+}
+
+
+.form-content .btn,
+.card-validation .btn {
+  width: 100%;
+  padding: 0.9rem;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: var(--neutral-dark-slate-grey);
+  color: var(--neutral-white);
+  font-weight: 500;
+}
+
+.form-content .btn:hover,
+.card-validation .btn:hover {
+  background: linear-gradient(to right, #ff5797, #ff6257);
+  box-shadow: 0 7px 8px rgba(255, 87, 151, 0.5);
+}
+
+.card-image img {
+  width: 100%;
+}
+
+.card-validation {
+  display: none;
+  background: var(--neutral-white);
+  width: 100%;
+  max-width: 350px;
+  padding: 2rem;
+}
+
+.card-validation img {
+  width: 40px;
+}
+
+.card-validation h1 {
+  color: var(--neutral-dark-slate-grey);
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+.card-validation p {
+  font-size: 13px;
+  color: var(--neutral-dark-slate-grey);
+  line-height: 1.4;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+@media(max-width: 750px) {
+
+  .card-image img {
+    display: none;
+  }
+
+}
